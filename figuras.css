@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cuadrado{
+    border: solid 2px;
+}
+.triangulo{
+    border: solid 2px;
+}
+.circulo{
+    border: solid 2px;
+    background-color: aqua;
+}

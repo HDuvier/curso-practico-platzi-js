@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas | curso practico platzi</title>
+    <link rel="stylesheet" href="./figuras.css">
 </head>
 <body>
     <header>
@@ -12,33 +13,34 @@
     </header>
     <section>
         <h2>area y perimetro de un cuadrado</h2>
-        <form action="">
+        <form class="cuadrado" action="">
             <label for="inputCuadrado">
-                cuanto mide el lado del cuadrado
+               <br> cuanto mide el lado del cuadrado <br>
             </label>
             <input id = "inputCuadrado" type="number">
             <button type="button" onclick="calcPerimetroCuadrado()">calcular el perimetro </button>
             <button type="button" onclick="calcAreaCuadrado()">calcular el area </button>
         </form>
 
-        <form action="">
+        <h2>area y perimetro de un triangulo</h2>
+        <form class="triangulo" action="">
             <label for="inputLadoA">
-                cuanto mide el lado A del triangulo
+                <br> cuanto mide el lado A del triangulo <br>
             </label>
             <input id = "inputLadoA" type="number">
 
             <label for="inputLadoB">
-                cuanto mide el lado B del triangulo
+                <br> cuanto mide el lado B del triangulo <br>
             </label>
             <input id = "inputLadoB" type="number">
 
             <label for="inputBase">
-                cuanto mide la base del triangulo
+                <br> cuanto mide la base del triangulo <br>
             </label>
             <input id = "inputBase" type="number">
             
             <label for="inputAltura">
-                cuanto mide la altura del triangulo
+               <br> cuanto mide la altura del triangulo <br>
             </label>
             <input id = "inputAltura" type="number">
 
@@ -46,9 +48,10 @@
             <button type="button" onclick="calcAreaTriangulo()">calcular el area </button>
         </form>
 
-        <form action="">
+        <h2>Area y perimeto de un circulo</h2>
+        <form class="circulo" action="">
             <label for="inputRadio">
-                cuanto mide el radio del circulo
+               <br> cuanto mide el radio del circulo <br>
             </label>
             <input id = "inputRadio" type="number">
             <button type="button" onclick="calcPerimetroCirculo()">calcular el perimetro </button>
