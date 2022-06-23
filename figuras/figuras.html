@@ -7,67 +7,79 @@
     <title>Figuras geometricas | curso practico platzi</title>
     <link rel="stylesheet" href="./figuras.css">
     <script src="./figuras.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Figuras geometricas</h1>
-    </header>
-    <section>
-        <h2>area y perimetro de un cuadrado</h2>
-        <figure>
-            <img class="imgCuadrado" src="./img/cuadradoParedPequeño.jpg" alt="cuadrado al fondo de un pasillo">
-        </figure>
-        <form class="cuadrado" action="">
-            <label for="inputCuadrado">
-               <br> cuanto mide el lado del cuadrado <br>
-            </label>
-            <input id = "inputCuadrado" type="number">
-            <button type="button" onclick="calcPerimetroCuadrado()">calcular el perimetro </button>
-            <button type="button" onclick="calcAreaCuadrado()">calcular el area </button>
-        </form>
+    <div class="contenedor">
+        <header>
+            <h1>Figuras geometricas</h1>
+        </header>
+        <section class="circulo">
+            <h2>Area y perimeto de un circulo</h2>
+            <figure>
+                <img class="imgCirculos" src="./img/circulosAzulPequeño.jpg" alt="circulos concentricos azules">
+            </figure>
+            <form class="formularioCirculo" action="">
+                <label for="inputRadio">
+                <br> Cuanto mide el radio del circulo <br>
+                </label>
+                <input id = "inputRadio" type="number">
+                <section class="circulo-Buttons">
+                    <button type="button" onclick="calcPerimetroCirculo()">Calcular el perimetro </button>
+                    <button type="button" onclick="calcAreaCirculo()">Calcular el area </button>
+                </section>
+            </form>
+        </section>
+        <section class="cuadrado">
+            <h2>Area y perimetro de un cuadrado</h2>
+            <figure>
+                <img class="imgCuadrado" src="./img/cuadradoParedPequeño.jpg" alt="cuadrado al fondo de un pasillo">
+            </figure>
+            <form class="formularioCuadrado" action="">
+                <label for="inputCuadrado">
+                <br> Cuanto mide el lado del cuadrado <br>
+                </label>
+                <input id = "inputCuadrado" type="number">
+                <section class="cuadrado-Buttons">
+                    <button type="button" onclick="calcPerimetroCuadrado()">Calcular el perimetro </button>
+                    <button type="button" onclick="calcAreaCuadrado()">Calcular el area </button>
+                </section>
+            </form>
+        </section>
+        <section class="triangulo">
+            <h2>Area y perimetro de un triangulo</h2>
+            <figure>
+                <img class="imgTriangulo" src="./img/triangulosLuzPequeño.jpg" alt="triangulos de luz difuminada">
+            </figure>
+            <form class="formularioTriangulo" action="">
+                <label for="inputLadoA">
+                    <br> Cuanto mide el lado A del triangulo <br>
+                </label>
+                <input id = "inputLadoA" type="number">
 
-        <h2>area y perimetro de un triangulo</h2>
-        <figure>
-            <img class="imgTriangulo" src="./img/triangulosLuzPequeño.jpg" alt="triangulos de luz difuminada">
-        </figure>
-        <form class="triangulo" action="">
-            <label for="inputLadoA">
-                <br> cuanto mide el lado A del triangulo <br>
-            </label>
-            <input id = "inputLadoA" type="number">
+                <label for="inputLadoB">
+                    <br> Cuanto mide el lado B del triangulo <br>
+                </label>
+                <input id = "inputLadoB" type="number">
 
-            <label for="inputLadoB">
-                <br> cuanto mide el lado B del triangulo <br>
-            </label>
-            <input id = "inputLadoB" type="number">
-
-            <label for="inputBase">
-                <br> cuanto mide la base del triangulo <br>
-            </label>
-            <input id = "inputBase" type="number">
-            
-            <label for="inputAltura">
-               <br> cuanto mide la altura del triangulo <br>
-            </label>
-            <input id = "inputAltura" type="number">
-
-            <button type="button" onclick="calcPerimetroTriangulo()">calcular el perimetro </button>
-            <button type="button" onclick="calcAreaTriangulo()">calcular el area </button>
-        </form>
-
-        <h2>Area y perimeto de un circulo</h2>
-        <figure>
-            <img class="imgCirculos" src="./img/circulosAzulPequeño.jpg" alt="circulos concentricos azules">
-        </figure>
-        <form class="circulo" action="">
-            <label for="inputRadio">
-               <br> cuanto mide el radio del circulo <br>
-            </label>
-            <input id = "inputRadio" type="number">
-            <button type="button" onclick="calcPerimetroCirculo()">calcular el perimetro </button>
-            <button type="button" onclick="calcAreaCirculo()">calcular el area </button>
-        </form>
-    </section>
-
+                <label for="inputBase">
+                    <br> Cuanto mide la base del triangulo <br>
+                </label>
+                <input id = "inputBase" type="number">
+                
+                <label for="inputAltura">
+                <br> Cuanto mide la altura del triangulo <br>
+                </label>
+                <input id = "inputAltura" type="number">
+                <section class="triangulo-Buttons">
+                    <button type="button" onclick="calcPerimetroTriangulo()">Calcular el perimetro </button>
+                    <button type="button" onclick="calcAreaTriangulo()">Calcular el area </button>
+                </section>
+            </form>
+        </section>
+        
+    </div>
 </body>
 </html>

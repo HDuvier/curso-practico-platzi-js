@@ -7,15 +7,122 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Anek Latin', sans-serif;
+    background: linear-gradient(45deg, rgb(90, 61, 145), rgb(5, 5, 63), black);
+    color: azure;
+    font-size: 1.4rem;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 400 px;
+   
+}
+h2{
+    padding: 5px 5px;
 }
 .cuadrado{
-    border: solid 2px;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .triangulo{
-    border: solid 2px;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .circulo{
-    border: solid 2px;
-    background-color: aqua;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.circulo figure{
+    width: 60%;
+    height: auto;
+}
+.triangulo figure{
+    width: 60%;
+    height: auto;
+}
+.cuadrado figure{
+    width: 60%;
+    height: auto;
+}
+.imgCirculos{
+    width: 100%;
+    height: auto;
+}
+.imgTriangulo{
+    width: 100%;
+    height: auto;
+}
+.imgCuadrado{
+    width: 100%;
+    height: auto;
+}
+#inputRadio{
+    margin: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    
+}
+#inputCuadrado{
+    margin: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#inputLadoA{
+    margin: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#inputLadoB{
+    margin: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#inputBase{
+    margin: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#inputAltura{
+    margin: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.formularioCirculo .circulo-Buttons{
+    display: flex;
+    justify-content: center;    
+}
+.formularioCuadrado .cuadrado-Buttons{
+    display: flex;
+    justify-content: center;    
+}
+.formularioTriangulo .triangulo-Buttons{
+    display: flex;
+    justify-content: center;    
+}
+.formularioCirculo .circulo-Buttons button{
+    margin-left: 5%;
+    padding: 0 5px 0 5px ;
+}
+.formularioCuadrado .cuadrado-Buttons button{
+    margin-left: 5%;
+    padding: 0 5px 0 5px ;
+}
+.formularioTriangulo .triangulo-Buttons button{
+    margin-left: 5%;
+    padding: 0 5px 0 5px ;
 }
