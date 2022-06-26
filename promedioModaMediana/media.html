@@ -13,7 +13,28 @@
         <h1>Media, mediana y moda</h1>
     </header>
     <main>
+        <figure>
+            <img src="./img/analiticsPequeña.jpg" alt="letras diciendo analitics">
+        </figure>
+        <form action="">
+            <label for="salario">Agregue los salarios uno por uno</label>
+            <input id="salario" type="number">
+            <button type="button" onclick="incluirLista()"> Agregar </button>
+            <button type="button" onclick="borrarLista()">Borrar ultimo elemento</button>
+        </form>
+
+        <p id="listadoSalarios"></p>
         
+        <p>Elija el proceso que desea realizar con el listado anterior</p>
+        <section class="buttons">
+            <button type="button" onclick="mediaAritmetica1(lista)"> Media aritmetica </button>
+            <button type="button" onclick="mediana(lista)">Mediana aritmetica</button>
+            <button type="button" onclick="contar(lista)">Moda aritmetica</button>
+        </section>
+
+        <p id="resultadoMediaAritmetica"></p>
+        <p id="medianaAritmetica"></p>
+        <p id="modaAritmetica"></p>
     </main>
 </body>
 </html>

@@ -8,49 +8,49 @@ html{
 }
 body{
     font-family: 'Anek Latin', sans-serif;
-    background: linear-gradient(45deg, rgb(90, 61, 145), rgb(5, 5, 63), black);
+    background: linear-gradient(45deg, rgb(33, 13, 71), rgb(5, 5, 63), black);
     color: azure;
     font-size: 1.4rem;
-}
-.contenedor{
-    display: grid;
-    grid-template-columns: 400 px;
-   
 }
 h1{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 h2{
+    font-size: 2rem;
     display: flex;
     justify-content: center;
-    padding: 5px 5px;
+    margin: 20px 0 20px 0;
 }
 .cuadrado{
-    display: grid;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 0 20px 0; 
 }
 .triangulo{
-    display: grid;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 0 20px 0;
 }
 .circulo{
-    display: grid;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 0 20px  0;
 }
 .circulo figure{
-    width: 60%;
+    width: 80%;
     height: auto;
 }
 .triangulo figure{
-    width: 60%;
+    width: 80%;
     height: auto;
 }
 .cuadrado figure{
-    width: 60%;
+    width: 80%;
     height: auto;
 }
 .imgCirculos{
@@ -66,8 +66,8 @@ h2{
     height: auto;
 }
 #inputRadio{
-    min-width: 30rem;
-    margin: 10px 5%;
+    min-width: 200px;
+    margin: 10px 0;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -75,92 +75,66 @@ h2{
     
 }
 #inputCuadrado{
-    min-width: 30rem;
-    margin: 10px 5%;
+    min-width: 200px;
+    margin: 10px 0;
     border: none;
     outline: none;
     border-radius: 5px;
     padding-left: 5px;
 }
 #inputLadoA{
-    min-width: 30rem;
-    margin: 10px 5%;
+    min-width: 200px;
+    margin: 10px 0;
     border: none;
     outline: none;
     border-radius: 5px;
     padding-left: 5px;
 }
 #inputLadoB{
-    min-width: 30rem;
-    margin: 10px 5%;
+    min-width: 200px;
+    margin: 10px 0;
     border: none;
     outline: none;
     border-radius: 5px;
     padding-left: 5px;
 }
 #inputBase{
-    min-width: 30rem;
-    margin: 10px 5%;
+    min-width: 200px;
+    margin: 10px 0;
     border: none;
     outline: none;
     border-radius: 5px;
     padding-left: 5px;
 }
 #inputAltura{
-    min-width: 30rem;
-    margin: 10px 5%;
+    min-width: 200px;
+    margin: 10px 0;
     border: none;
     outline: none;
     border-radius: 5px;
     padding-left: 5px;
 }
-.circulo .formularioCirculo label{
+.circulo .formularioCirculo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-.cuadrado .formularioCuadrado label{
+.cuadrado .formularioCuadrado{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-.triangulo .formularioTriangulo label{
+.triangulo .formularioTriangulo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-.formularioCirculo .circulo-Buttons{
-    display: flex;
-    justify-content: center;    
-}
-.formularioCuadrado .cuadrado-Buttons{
-    display: flex;
-    justify-content: center;    
-}
-.formularioTriangulo .triangulo-Buttons{
-    display: flex;
-    justify-content: center;    
-}
-.formularioCirculo .circulo-Buttons button{
-    margin-left: 5%;
-    padding: 5px ;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-.formularioCuadrado .cuadrado-Buttons button{
-    margin-left: 5%;
-    padding:5px ;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-.formularioTriangulo .triangulo-Buttons button{
-    margin-left: 5%;
-    padding:5px ;
-    border-radius: 5px;
-    border: none;
-    outline: none;
 }
 .formularioCirculo .circulo-Buttons button:hover{
     border: 2px solid #b41313;
     box-shadow: 0 1px 1px #000001;
     color: rgb(22, 7, 163);
+}
+p{
+    color: azure;
+    margin: 15px;
 }

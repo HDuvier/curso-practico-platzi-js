@@ -47,18 +47,20 @@ console.groupEnd();
 
 function calcPerimetroCuadrado() {
     const input = document.getElementById("inputCuadrado");
-    const value = input.value;
+    const value = Number(input.value);
 
     const Perimetro = perimetroCuadrado(value);
-    alert(Perimetro);
+    const valorPerimetro = document.getElementById("valorPerimetroCuadrado");
+    valorPerimetro.innerText = "EL PERIMETRO ES " + Perimetro;
 };
 
 function calcAreaCuadrado() {
     const input = document.getElementById("inputCuadrado");
     const value = Number(input.value);
 
-    const Area = areaCuadrado(value);
-    alert(Area);
+    const AreaCuadrado = areaCuadrado(value);
+    const ValorAreaCuadrado = document.getElementById("valorAreaCuadrado");
+    ValorAreaCuadrado.innerText = "EL AREA ES " + AreaCuadrado;
 };
 
 function calcPerimetroTriangulo(){
@@ -70,7 +72,8 @@ function calcPerimetroTriangulo(){
     const valueBa = Number(inputBa.value);
 
     let PerimetroTriangulo = perimetroTriangulo(valueA, valueB, valueBa);
-    alert(PerimetroTriangulo);
+    const valorPerimetroTriangulo = document.getElementById("valorPerimetroTriangulo");
+    valorPerimetroTriangulo.innerText = "EL PERIMETRO ES " + PerimetroTriangulo;
 };
 
 function calcAreaTriangulo() {
@@ -81,7 +84,8 @@ function calcAreaTriangulo() {
     
 
     let AreaTriangulo = areaTriangulo(valueBa, valueAlt);
-    alert(AreaTriangulo);
+    const ValorAreaTriangulo = document.getElementById("valorAreaTriangulo");
+    ValorAreaTriangulo.innerText = "EL AREA ES " + AreaTriangulo;
 };
 
 function calcPerimetroCirculo() {
@@ -89,7 +93,8 @@ function calcPerimetroCirculo() {
     const valueR = inputR.value;
 
     const PerimetroCir = perimetroCirculo(valueR);
-    alert(PerimetroCir);
+    const valorPerimetroCirc = document.getElementById("valorPerimetroCirculo");
+    valorPerimetroCirc.innerText = "EL PERIMETRO ES " + PerimetroCir;
 };
 
 function calcAreaCirculo() {
@@ -97,5 +102,6 @@ function calcAreaCirculo() {
     const valueR = Number(inputR.value);
 
     const AreaCir = areaCirculo(valueR);
-    alert(AreaCir);
+    const valorAreaCirc = document.getElementById("valorAreaCirculo");
+    valorAreaCirc.innerText = "EL AREA ES " + AreaCir;
 };

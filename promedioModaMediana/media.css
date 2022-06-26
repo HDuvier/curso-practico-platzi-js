@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Anek Latin', sans-serif;
+    background: linear-gradient(45deg, rgb(33, 13, 71), rgb(5, 5, 63), black);
+    color: azure;
+    font-size: 1.4rem;
+}
+figure{
+    width: 100%;
+    height: auto;
+}
+figure img{
+    width: 100%;
+    height: auto;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    justify-items:flex-end;
+    width: 100%;
+    padding: 0 10% 0 10%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#listadoSalarios{
+    margin: 10px;
+    padding: 10px;
+}
+#resultadoMediaAritmetica{
+    margin: 10px;
+    padding: 10px;
+}
+#medianaAritmetica{
+    margin: 10px;
+    padding: 10px;
+}
+#modaAritmetica{
+    margin: 10px;
+    padding: 10px;
+}
