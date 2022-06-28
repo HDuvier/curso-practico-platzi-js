@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>salarios || curso practico de js platzi</title>
+    <title>Salarios || curso practico de js platzi</title>
     <link rel="stylesheet" href="./salarios.css">
     <script src="./salarios.js"></script>
     <script src="./analisis.js"></script>
-
 </head>
 <body>
+    <header>
+        <h1> Ponderado de salarios</h1>
+    </header>
     
+    <main>
+        <p>Ingrese el listado de salarios</p>
+        <figure>
+            <img src="./img/billetesPequeña.jpg" alt="Billetes enrollados">
+        </figure>
+        <form action="">
+            <label for="inputSalarios">valor</label>
+            <input id="inputSalarios" type="number">
+            <section class="form-Buttons">
+                <button type="button" onclick="agregarSalario()">Agregar</button>
+                <button type="button" onclick="borrarLista()">Borrar ultimo</button>
+            </section>
+        </form>
+        <p class="listaSalarios"></p>
+        <section class="buttonsResult">
+            <button type="button" onclick="">Calcular promedio</button>
+            <button type="button" onclick="">Calcular mediana</button>
+            <button type="button" onclick="">Calcular moda</button>
+            <button type="button" onclick="">Top 10%</button>
+        </section>
+        <section class="result">
+            <p class="result-Promedio"></p>
+            <p class="result-Mediana"></p>
+            <p class="result-Moda"></p>
+            <p class="result-Top"></p>
+        </section>
+    </main>
 </body>
 </html>

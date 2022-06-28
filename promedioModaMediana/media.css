@@ -1,4 +1,7 @@
 *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,13 +10,13 @@ html{
     font-size: 62.5%;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Anek Latin', sans-serif;
     background: linear-gradient(45deg, rgb(33, 13, 71), rgb(5, 5, 63), black);
     color: azure;
     font-size: 1.4rem;
+}
+h1{
+    margin: 10px 0 10px 0;
 }
 figure{
     width: 100%;
@@ -24,40 +27,20 @@ figure img{
     height: auto;
 }
 p{
-    display: flex;
-    flex-direction: column;
-    justify-items:flex-end;
     width: 100%;
     padding: 0 10% 0 10%;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 10px;
 }
 button{
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
 }
-#listadoSalarios{
-    margin: 10px;
-    padding: 10px;
+form label{
+    margin: 10px 0 10px 0;
 }
-#resultadoMediaAritmetica{
-    margin: 10px;
-    padding: 10px;
-}
-#medianaAritmetica{
-    margin: 10px;
-    padding: 10px;
-}
-#modaAritmetica{
-    margin: 10px;
-    padding: 10px;
+button:hover{
+    border: 2px solid #b41313;
+    box-shadow: 0 1px 1px white;
+    color: #073603;
 }

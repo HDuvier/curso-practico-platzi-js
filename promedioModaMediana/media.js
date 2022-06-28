@@ -1,5 +1,5 @@
 //Se genera una funcion para agregar o borrar elementos de la lista
-lista =[]
+let lista =[]
 function incluirLista (){
     let i = document.getElementById("salario");
     const elemento = Number(i.value);

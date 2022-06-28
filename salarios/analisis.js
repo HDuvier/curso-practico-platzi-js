@@ -1,3 +1,23 @@
+
+//input salarios
+let lista = [];
+
+function agregarSalario(){ 
+    let i = document.getElementById("inputSalarios");
+    const elemento = Number(i.value);
+    lista.push(elemento);
+
+    const listado = document.getElementById("listaSalarios");
+    listado.innerText = "lista de salarios= [" + lista + "]";
+};
+function borrarLista (){
+    lista.pop();
+
+    const listado = document.getElementById("listadoSalarios");
+    listado.innerText = "lista= [" + lista + "]";
+};
+
+
 // analisis salarial 
 
 const salarioCol = colombia.map(

@@ -1,5 +1,7 @@
 # curso-practico-platzi-js
 
+## En el desarrollo del curso se realizan las siguientes actividades
+
 ## Taller 1: figuras geometricas
 
 -Definir formulas
@@ -21,3 +23,7 @@
 -crear funciones
 -integrar JS con html
 
+## Adicionalmente 
+-se crea un css con estilos para cada taller
+-se hacen modificaciones y se optimiza el codigo js
+-se hacen cambios para que las distintas ventanas sean responsivas

@@ -131,7 +131,7 @@ h2{
 }
 .formularioCirculo .circulo-Buttons button:hover{
     border: 2px solid #b41313;
-    box-shadow: 0 1px 1px #000001;
+    box-shadow: 0 1px 1px white;
     color: rgb(22, 7, 163);
 }
 p{
