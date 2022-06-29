@@ -12,3 +12,21 @@ body{
     color: azure;
     font-size: 1.4rem;
 }
+.container{
+    display: grid;
+    grid-template: repeat(4,1fr)/1fr 1fr;
+}
+.header{
+    grid-area: 1/1/2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+figure{
+    width: 80%;
+    height: auto;
+}
+img{
+    width: 100%;
+    height: auto;
+}
