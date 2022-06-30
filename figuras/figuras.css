@@ -129,7 +129,12 @@ h2{
     flex-direction: column;
     justify-content: center;
 }
-.formularioCirculo .circulo-Buttons button:hover{
+button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+Button:hover{
     border: 2px solid #b41313;
     box-shadow: 0 1px 1px white;
     color: rgb(22, 7, 163);
