@@ -18,8 +18,15 @@ function perimetroTriangulo(ladoTriangulo1,ladoTriangulo2,baseTriangulo) {
     return ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
 };
 
-function areaTriangulo (baseTriangulo, alturaTriangulo){    
-    return((baseTriangulo*alturaTriangulo)/2);
+function semiperimetro(ladoA,ladoB,ladoC){
+    let semiPerTriangulo = ((ladoA + ladoB + ladoC)/2)
+    return semiPerTriangulo
+}
+
+function areaTriangulo (ladoA,ladoB,ladoC){    
+    let i = semiperimetro(ladoA,ladoB,ladoC)
+    let areaHeron = (Math.sqrt(i*(i-ladoA)*(i-ladoB)*(i-ladoC)))
+    return areaHeron;
 };
 
 console.groupEnd();
@@ -66,24 +73,26 @@ function calcAreaCuadrado() {
 function calcPerimetroTriangulo(){
     const inputA = document.getElementById("inputLadoA");
     const inputB = document.getElementById("inputLadoB");
-    const inputBa = document.getElementById("inputBase");
+    const inputC = document.getElementById("inputLadoC");
     const valueA = Number (inputA.value);
     const valueB = Number(inputB.value);
-    const valueBa = Number(inputBa.value);
+    const valueC = Number(inputC.value);
 
-    let PerimetroTriangulo = perimetroTriangulo(valueA, valueB, valueBa);
+    let PerimetroTriangulo = perimetroTriangulo(valueA, valueB, valueC);
     const valorPerimetroTriangulo = document.getElementById("valorPerimetroTriangulo");
     valorPerimetroTriangulo.innerText = "EL PERIMETRO ES " + PerimetroTriangulo;
 };
 
 function calcAreaTriangulo() {
-    const inputBa = document.getElementById("inputBase");
-    const inputAlt = document.getElementById("inputAltura");
-    const valueBa = Number(inputBa.value);
-    const valueAlt = Number(inputAlt.value);
+    const inputA = document.getElementById("inputLadoA");
+    const inputB = document.getElementById("inputLadoB");
+    const inputC = document.getElementById("inputLadoC");
+    const valueA = Number (inputA.value);
+    const valueB = Number(inputB.value);
+    const valueC = Number(inputC.value);
     
 
-    let AreaTriangulo = areaTriangulo(valueBa, valueAlt);
+    let AreaTriangulo = areaTriangulo(valueA, valueB, valueC);
     const ValorAreaTriangulo = document.getElementById("valorAreaTriangulo");
     ValorAreaTriangulo.innerText = "EL AREA ES " + AreaTriangulo;
 };
