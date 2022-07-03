@@ -10,6 +10,17 @@ function agregarSalario(){
     const listado = document.getElementById("listaSalarios");
     listado.innerText = "lista de salarios= [" + lista + "]";
 };
+/*
+function separarComa(){
+    
+    let j = document.getElementById("inputSal");
+    let stringJ = String(j.value)
+    let listaComa = stringJ.split(",");
+
+    const listadoFinal = document.getElementById("listaSalarios");
+    listadoFinal.innerText = "lista de salarios= [" + listaComa + "]";
+}
+*/
 function borrarSalario (){
     lista.pop();
 
