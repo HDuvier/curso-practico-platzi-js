@@ -7,7 +7,6 @@
     <title>Salarios || curso practico de js platzi</title>
     <link rel="stylesheet" href="./salarios.css">
     <script src="./salarios.js"></script>
-    <script src="./analisis.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500&display=swap" rel="stylesheet">
@@ -29,21 +28,21 @@
             <input id="inputSalarios" type="number">
             <section class="form-Buttons">
                 <button type="button" onclick="agregarSalario()">Agregar</button>
-                <button type="button" onclick="borrarLista()">Borrar ultimo</button>
+                <button type="button" onclick="borrarSalario()">Borrar ultimo</button>
             </section>
         </form>
-        <p class="listaSalarios"></p>
+        <p id="listaSalarios"></p>
         <section class="buttonsResult">
-            <button type="button" onclick="">Calcular promedio</button>
-            <button type="button" onclick="">Calcular mediana</button>
-            <button type="button" onclick="">Calcular moda</button>
-            <button type="button" onclick="">Top 10%</button>
+            <button type="button" onclick="mediaAritmeticaSal(lista)">Calcular promedio</button>
+            <button type="button" onclick="medianaSalary(lista)">Calcular mediana</button>
+            <button type="button" onclick="contar(lista)">Calcular moda</button>
+            <button type="button" onclick="top10(lista)">Top 10%</button>
         </section>
         <section class="result">
-            <p class="result-Promedio"></p>
-            <p class="result-Mediana"></p>
-            <p class="result-Moda"></p>
-            <p class="result-Top"></p>
+            <p id="result-Promedio"></p>
+            <p id="result-Mediana"></p>
+            <p id="result-Moda"></p>
+            <p id="result-Top"></p>
         </section>
     </main>
 </body>

@@ -13,25 +13,27 @@
 </head>
 <body>
     <header>
-        <h1>Física</h1>
+        <h1>Calculo</h1>
         <button><a href="../index.html"><img src="./imgFisica/arrow-left.svg" alt="flecha hacia la izquierda"></a></button> 
     </header>
     <main>
         <h2>Derivadas e integrales</h2>
 
         <figure>
-            <img src="" alt="derivada">
+            <img src="./imgFisica/derivada a.jpg" alt="ecuacion">
         </figure>
-        <figure>
-            <img src="" alt="integral">
-        </figure>
-        <label for="valorA">ingresa el valor de a</label>
-        <input id="valorA" type="number">
-        <label for="exponente">ingresa el exponente</label>
-        <input id="exponente" type="number">
+        <form action="">
+            <label for="valorA">ingresa el valor de a</label>
+            <input id="valorA" type="number">
 
-        <button type="button" onclick="">Derivar</button>
-        <button type="button" onclick="">Integrar</button>
+            <label for="exponente">ingresa el exponente</label>
+            <input id="exponente" type="number">
+
+            <button type="button" onclick="calcularDerivada()">Derivar</button>
+            <button type="button" onclick="calcularIntegral()">Integrar</button>
+        </form>
+        <p id="resultadoDerivada"></p>
+        <p id="resultadoIntegral"></p>
     </main>
 </body>
 </html>
