@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salarios || curso practico de js platzi</title>
     <link rel="stylesheet" href="./salarios.css">
+    <link rel="stylesheet" href="./salarios-media-queries.css">
     <script src="./salarios.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,19 +20,23 @@
     </header>
     
     <main>
-        <p>Ingrese el listado de salarios</p>
-        <figure>
+        <figure class="imagen">
             <img src="./img/billetesPequeña.jpg" alt="Billetes enrollados">
         </figure>
+        
         <form action="">
+            <p>Ingrese el listado de salarios</p>
+
             <label for="inputSalarios">valor</label>
             <input id="inputSalarios" type="number">
             <section class="form-Buttons">
                 <button type="button" onclick="agregarSalario()">Agregar</button>
                 <button type="button" onclick="borrarSalario()">Borrar ultimo</button>
             </section>
+
+            <p id="listaSalarios"></p>
         </form>
-        <p id="listaSalarios"></p>
+        
         <section class="buttonsResult">
             <button type="button" onclick="mediaAritmeticaSal(lista)">Calcular promedio</button>
             <button type="button" onclick="medianaSalary(lista)">Calcular mediana</button>

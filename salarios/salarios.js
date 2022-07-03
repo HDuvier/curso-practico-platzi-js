@@ -71,7 +71,7 @@ function contar (lista){
 
     const listaModa = Object.entries(cantidadVeces).sort(
         function (valorSumado, nuevoNum){
-            return nuevoNum[1] -valorSumado[1]
+            return nuevoNum[1] -valorSumado[1];
         }
     );
 
@@ -89,7 +89,7 @@ function top10(lista){
     );
 
     let i = parseInt(salarioSorted.length-salarioSorted.length*0.1);
-    const j = salarioSorted.slice(i)
+    const j = salarioSorted.slice(i);
 
     let top = document.getElementById("result-Top");
     top.innerText = "el top 10% de salarios es Top= [ "+ j + "]";

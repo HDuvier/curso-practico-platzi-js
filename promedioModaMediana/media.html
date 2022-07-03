@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media, mediana y moda || curso practido de JS</title>
     <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./media-media-queries.css">
     <script src="./media.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,18 +29,19 @@
             <button type="button" onclick="borrarLista()">Borrar ultimo elemento</button>
         </form>
 
-        <p id="listadoSalarios"></p>
         
-        <p>Elija el proceso que desea realizar con el listado anterior</p>
         <section class="buttons">
+            <p id="listadoSalarios"></p>
+            <p>Elija el proceso que desea realizar con el listado anterior</p>
+
             <button type="button" onclick="mediaAritmetica1(lista)"> Media aritmetica </button>
             <button type="button" onclick="mediana(lista)">Mediana aritmetica</button>
             <button type="button" onclick="contar(lista)">Moda aritmetica</button>
+        
+            <p id="resultadoMediaAritmetica"></p>
+            <p id="medianaAritmetica"></p>
+            <p id="modaAritmetica"></p>
         </section>
-
-        <p id="resultadoMediaAritmetica"></p>
-        <p id="medianaAritmetica"></p>
-        <p id="modaAritmetica"></p>
     </main>
 </body>
 </html>
