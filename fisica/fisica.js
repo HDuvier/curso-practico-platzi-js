@@ -16,7 +16,7 @@ function calcularDerivada (){
     let derivando = derivar(valueA,valueN);
 
     const valorDerivada = document.getElementById("resultadoDerivada")
-    valorDerivada.innerText= "El resultado de la derivada es f '(x)= " + derivando[0] + "X^" +derivando[1]
+    valorDerivada.innerText= "EL RESULTADO DE LA DERIVADA ES f '(x)= " + derivando[0] + "X^" +derivando[1]
 }
 
 // Integrales
@@ -36,5 +36,5 @@ function calcularIntegral (){
     let integrando = integrar(valueA,valueN);
 
     const valorIntegral = document.getElementById("resultadoIntegral")
-    valorIntegral.innerText= "El resultado de la integral es f(x)= " + integrando[0] + "X^" +integrando[1]
+    valorIntegral.innerText= "EL RESULTADO DE LA INTEGRAL ES f(x)= " + integrando[0] + "X^" +integrando[1]
 }

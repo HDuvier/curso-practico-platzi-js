@@ -41,7 +41,7 @@ function mediaAritmetica1(lista){
     const resultadoMedia = mediaAritmetica(lista);
 
     const MediaAritmetica = document.getElementById("resultadoMediaAritmetica");
-    MediaAritmetica.innerText = "la media aritmetica es " + resultadoMedia;
+    MediaAritmetica.innerText = "LA MEDIA ARITMETICA ES " + resultadoMedia;
 };
 
 function mediana (lista){
@@ -61,11 +61,11 @@ function mediana (lista){
 
         const promedioMediana = mediaAritmetica([element1,element2]);
         let MedianaAritmetica = document.getElementById("medianaAritmetica");
-        MedianaAritmetica.innerText = "la mediana aritmetica es " + promedioMediana;
+        MedianaAritmetica.innerText = "LA MEDIANA ARITMETICA ES " + promedioMediana;
     }   else{
         const medianaImpar = listaSort[posicionLista];
         let MedianaAritmetica = document.getElementById("medianaAritmetica");
-        MedianaAritmetica.innerText = "la mediana aritmetica es " + medianaImpar;
+        MedianaAritmetica.innerText = "LA MEDIANA ARITMETICA ES " + medianaImpar;
     }   
 };
 
@@ -90,5 +90,5 @@ function contar (lista){
 
     const moda = listaModa[0];
     let ModaAritmetica = document.getElementById("modaAritmetica");
-    ModaAritmetica.innerText = "la moda aritmetica es " + moda[0] + " y se repite " + moda[1] + " veces";
+    ModaAritmetica.innerText = "LA MODA ARITMETICA ES " + moda[0] + " Y SE REPITE " + moda[1] + " VECES";
 };

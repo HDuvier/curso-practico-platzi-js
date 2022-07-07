@@ -46,7 +46,7 @@ function mediaAritmeticaSal(lista){
     const resultadoMedia = mediaAritmetica(lista);
 
     const MediaAritmetica = document.getElementById("result-Promedio");
-    MediaAritmetica.innerText = "El promedio salarial es " + resultadoMedia;
+    MediaAritmetica.innerText = "EL PROMEDIO SALARIAL ES " + resultadoMedia;
 };
 
 function medianaSalary (lista){
@@ -58,11 +58,11 @@ function medianaSalary (lista){
 
         const medianaSalarial = mediaAritmetica ([PersonaMitad1, PersonaMitad2]);
         const MedianaSalarial = document.getElementById("result-Mediana");
-        MedianaSalarial.innerText = "La mediana salarial es " + medianaSalarial;
+        MedianaSalarial.innerText = "LA MEDIANA SALARIAL ES " + medianaSalarial;
     } else {
         const PersonaMitad = lista[mitad];
         const MedianaSalarial = document.getElementById("result-Mediana");
-        MedianaSalarial.innerText = "La mediana salarial es " + PersonaMitad;
+        MedianaSalarial.innerText = "LA MEDIANA SALARIAL ES " + PersonaMitad;
     }
 
 };
@@ -88,7 +88,7 @@ function contar (lista){
 
     const moda = listaModa[0];
     let ModaAritmetica = document.getElementById("result-Moda");
-    ModaAritmetica.innerText = "la moda salarial es " + moda[0] + " y se repite " + moda[1] + " veces";
+    ModaAritmetica.innerText = "LA MODA SALARIAL ES " + moda[0] + " Y SE REPITE " + moda[1] + " VECES";
 };
 
 function top10(lista){
@@ -103,6 +103,6 @@ function top10(lista){
     const j = salarioSorted.slice(i);
 
     let top = document.getElementById("result-Top");
-    top.innerText = "el top 10% de salarios es Top= [ "+ j + "]";
+    top.innerText = "EL TOP 10% DE SALARIOS ES TOP= [ "+ j + "]";
     
 }
